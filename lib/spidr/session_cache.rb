@@ -106,6 +106,7 @@ module Spidr
           session.use_ssl     = true
           session.verify_mode = OpenSSL::SSL::VERIFY_NONE
           session.ssl_timeout = @ssl_timeout
+          session.ssl_version = 'TLSv1'
           session.start
         end
 
